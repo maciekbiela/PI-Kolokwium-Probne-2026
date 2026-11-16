@@ -1,0 +1,5 @@
+2:ERROR;A02;brak sygnalu
+4:ERROR;A04;przerwa
+3:ERROR;B03;blad odczytu
+2:ERROR;D02;kanal_1
+3:ERROR;D03;kanal_2

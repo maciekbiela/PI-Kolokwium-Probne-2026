@@ -1,0 +1,12 @@
+printf "" > raporty/bledy.txt
+for PLIK in dane/*.log; do
+[[ -f "$PLIK" ]] || continue
+grep -n '^ERROR' "$PLIK" >> raporty/bledy.txt
+done
+
+sort raporty/bledy.txt
+
+ILE=$(wc -l raporty/bledy.txt)
+printf "$ILE" > raporty/ile_bledow.txt
+
+cat 'raporty/ile_bledow.txt' 
